@@ -1,8 +1,15 @@
 import type { NextPage } from 'next'
+import { Suspense } from "react"
+import dynamic from 'next/dynamic'
+
 import Head from 'next/head'
 // Components
-import Header from '../components/header'
-import { FaBeer,Fa500Px,FaAccessibleIcon,FaAccusoft,FaAcquisitionsIncorporated,FaAd } from 'react-icons/fa';
+import { Header } from '../components/header'
+// import { FaBeer,Fa500Px,FaAccessibleIcon,FaAccusoft,FaAcquisitionsIncorporated,FaAd } from 'react-icons/fa';
+
+const DynamicIcons = dynamic(() => import('../components/icons'), {
+  suspense: true,
+})
 // import { BeakerIcon, AcademicCapIcon, AdjustmentsHorizontalIcon, AdjustmentsVerticalIcon, ArchiveBoxArrowDownIcon } from '@heroicons/react/24/outline'
 
 const Home: NextPage = () => {
@@ -22,10 +29,10 @@ const Home: NextPage = () => {
         <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Quia a quam mollitia deleniti blanditiis. At quod, magnam nemo cum officia dignissimos odit mollitia repellat voluptatem, temporibus ex vitae alias non.</p>
         <div className='mt-10'>
-          <FaBeer/>
-          <Fa500Px/>
-          <FaAccessibleIcon/>
-          <FaAccusoft/>
+          <Suspense fallback={"loading....."}>
+            <DynamicIcons />
+          </Suspense>
+
 
         </div>
 

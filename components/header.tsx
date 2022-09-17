@@ -12,7 +12,7 @@ interface IProps {
 const loadFeatures = () =>
     import("../utils/features").then(res => res.default)
 
-const Header: FC<IProps> = () => (
+export const Header: FC<IProps> = () => (
 
     <header className='max-w-7xl mx-auto sticky top-0 flex items-start justify-between'>
         <LazyMotion features={loadFeatures}>
@@ -65,5 +65,3 @@ const Header: FC<IProps> = () => (
         </LazyMotion>
     </header >
 )
-
-export default Header
