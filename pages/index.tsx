@@ -15,7 +15,11 @@ const Home: NextPage = () => {
       {/* Header */}
       <Header />
       {/* Hero */}
-
+      <div>
+        <h1>Test</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quia a quam mollitia deleniti blanditiis. At quod, magnam nemo cum officia dignissimos odit mollitia repellat voluptatem, temporibus ex vitae alias non.</p>
+      </div>
       {/* About */}
 
       {/* Experience */}
