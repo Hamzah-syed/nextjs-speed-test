@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 // Components
 import Header from '../components/header'
-import { FaBeer } from 'react-icons/fa';
-import { BeakerIcon, AcademicCapIcon, AdjustmentsHorizontalIcon, AdjustmentsVerticalIcon, ArchiveBoxArrowDownIcon } from '@heroicons/react/24/outline'
+import { FaBeer,Fa500Px,FaAccessibleIcon,FaAccusoft,FaAcquisitionsIncorporated,FaAd } from 'react-icons/fa';
+// import { BeakerIcon, AcademicCapIcon, AdjustmentsHorizontalIcon, AdjustmentsVerticalIcon, ArchiveBoxArrowDownIcon } from '@heroicons/react/24/outline'
 
 const Home: NextPage = () => {
   return (
@@ -22,10 +22,10 @@ const Home: NextPage = () => {
         <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Quia a quam mollitia deleniti blanditiis. At quod, magnam nemo cum officia dignissimos odit mollitia repellat voluptatem, temporibus ex vitae alias non.</p>
         <div className='mt-10'>
-          <AcademicCapIcon />
-          <BeakerIcon />
-          <AdjustmentsHorizontalIcon />
-          <AdjustmentsVerticalIcon />
+          <FaBeer/>
+          <Fa500Px/>
+          <FaAccessibleIcon/>
+          <FaAccusoft/>
 
         </div>
 
